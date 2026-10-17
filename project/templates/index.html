@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 이익 분배 시뮬레이터</title>
+    <!-- 외부 스타일시트 및 Chart.js 로드 -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>🔮 AI 이익 분배 시뮬레이터</h1>
+            <div class="turn-counter">현재 턴: <span id="current-turn">1</span></div>
+        </header>
+
+        <!-- 상단 대시보드 스탯 지표 카드 -->
+        <main class="dashboard">
+            <div class="stat-card">
+                <h3>국가 GDP</h3>
+                <p><span id="stat-gdp">100.0</span> 조 원</p>
+            </div>
+            <div class="stat-card">
+                <h3>자산 불평등 (지니계수)</h3>
+                <p><span id="stat-inequality">40.0</span> %</p>
+            </div>
+            <div class="stat-card">
+                <h3>AI 생산성 지수</h3>
+                <p><span id="stat-productivity">100.0</span></p>
+            </div>
+            <div class="stat-card">
+                <h3>시민 만족도</h3>
+                <p><span id="stat-satisfaction">50.0</span> %</p>
+            </div>
+        </main>
+
+        <!-- 중앙 경제 지표 그래프 실시간 캔버스 -->
+        <section class="chart-section">
+            <canvas id="economyChart"></canvas>
+        </section>
+
+        <!-- 하단 플레이어 액션 컨트롤 박스 -->
+        <footer class="controls">
+            <h2>이번 턴에 실행할 국가 정책을 고르세요:</h2>
+            <div class="btn-group">
+                <button class="policy-btn" onclick="submitPolicy('tax_ai')">🤖 AI 가치 초과세 도입</button>
+                <button class="policy-btn" onclick="submitPolicy('ubi')">💰 AI 기본 소득 지급</button>
+                <button class="policy-btn" onclick="submitPolicy('corporate_support')">🚀 AI 기업 규제철폐 및 지원</button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- 커스텀 JS 파일 로드 -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
