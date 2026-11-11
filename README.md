@@ -10,6 +10,6 @@
 ## 멘토링 자료
 |회차|자료 링크|
 |---|---|
-|1-3회차|https://docs.google.com/presentation/d/1A7Rbni6xtIN5Fn9lKNHQUGHe6FpVtDAIjKosPKhFSEs/edit?slide=id.p#slide=id.p|
-|4회차|https://docs.google.com/presentation/d/1uKpxGwjGBLFHKLmTWuUSfEZ43KQOo0NutXulyCu4_zM/edit?slide=id.p#slide=id.p|
-|5회차|https://docs.google.com/presentation/d/1BTpUJ2lVMBCoFsNZMAFigFpo6hlYgh3GJjVcP7f10vM/edit|
+|1-3회차|https://docs.google.com/presentation/d/1A7Rbni6xtIN5Fn9lKNHQUGHe6FpVtDAIjKosPKhFSEs/edit?usp=sharing|
+|4회차|https://docs.google.com/presentation/d/1uKpxGwjGBLFHKLmTWuUSfEZ43KQOo0NutXulyCu4_zM/edit?usp=sharing|
+|5회차|https://docs.google.com/presentation/d/1BTpUJ2lVMBCoFsNZMAFigFpo6hlYgh3GJjVcP7f10vM/edit?usp=sharing|
